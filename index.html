@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>task</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+
+    <style>
+
+        .all{
+            display: flex;
+            border: 5px black solid;
+            padding-top: 40px;
+            padding-left: 55px;
+            padding-bottom: 40px;
+        }
+        .left{
+            width: 70%;
+        }
+
+        .right{
+            margin-left: 55px ;
+        }
+
+        .Barcelona{
+            font-size: 20px;
+            margin-left: 30px;
+            width: 100%;
+            color: white;
+        }
+
+        .line1{
+            display: flex;
+            background-color: rgb(62, 62, 112);
+            padding: 6px;
+            border-radius: 20px;
+        }
+
+        .icon{
+            color: rgb(0, 0, 0);
+            background-color: white;
+            border: 2px solid rgb(62, 62, 112);
+            height: 50%;
+            margin-top: 12px;
+            width: 170px;
+            border-radius: 10px;
+            margin-left: 15px;
+            padding-bottom: 10px;
+            padding-left: 20px;      
+        }
+
+        .icon:hover{
+            background-color: rgb(212, 233, 241);
+        }
+
+        .calander{
+            display: flex;
+            margin-left: -460px;
+        }
+
+        
+
+        .n34{
+            font-size: 45px;
+        }
+
+        .block{
+            border: 3px none;
+            background-color: white;
+            color: rgb(89, 89, 165);
+            width: 100%;
+            align-items: center;
+            display: flex;
+            margin-bottom: 20px;
+            justify-content: center;
+            border-radius: 10px ;
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        .block:hover{
+            color: white;
+            background-color: rgb(89, 89, 165);
+            transform: scale(1.2);
+        }
+
+        .g{
+            margin-top: 15px;
+            margin-right: 0%;
+        }
+
+        .cheapest{
+            font-size: 27px;
+        }
+        
+        .down{
+            margin-left: 20px;
+        }
+
+        .line2{
+            width: 100%;
+            display: flex;
+            gap: 30px;
+        }
+
+        .tiger{            
+            height: 40px;
+            width: 40px;
+            margin-top: 50px;
+            margin-left: 30px;
+        }
+
+        .ic{
+            margin-top: 20px;
+            height: 40px;
+            width: 40px;
+            margin-left: -40px;
+        }
+
+        .l{
+            width: 15%;
+            font-size: 20px;
+            margin-left: 40px;
+            margin-top: 35px;
+        }
+
+        .l1{
+            width: 15%;
+            font-size: 20px;
+            margin-left: 40px;
+            margin-top: 35px;
+            color: rgb(89, 89, 165);
+        }
+
+        .box{
+            border: 2px none;
+            background-color: white;
+            width: 100%;
+            color: rgb(89, 89, 165);
+            border-radius: 20px;
+            margin-top: 30px;
+            display: flex;
+        }
+
+        .box:hover{
+            background-color: rgb(212, 233, 241);
+        }
+
+        .ri-record-circle-fill{
+            color:rgb(89, 89, 165) ;
+            font-size: 35px;
+        }
+
+        .n{
+            display: flex;
+            margin-top: 35px;
+            margin-left: 30px;
+            cursor: pointer;
+        }
+
+        .ri-record-circle-line{
+            color:rgb(89, 89, 165) ;
+            font-size: 35px;            
+        }
+
+        .o{
+            text-align: end;
+            width:130px;
+            margin-left: 30px;
+            margin-top: 35px;
+            font-size: 20px;
+        }
+
+        .p{
+            font-size: 45px;
+            margin-top: 8px;
+        }
+
+        .q{
+            margin-top: 32px;
+        }
+
+        .z{
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            margin-left: 50px;
+        }
+
+        .r{
+            background-color: orangered;
+            color: white;
+            height: 44px;
+            width: 140px;
+            font-size: 20px;
+            border: 2px;
+            border-radius: 5px;
+            margin-left: -120px;
+            margin-top: 50px;
+            cursor: pointer;
+        }
+
+        .r:hover{
+            background-color: rgb(255, 94, 35);
+        }
+
+        .r:active{
+            background-color: red;
+        }
+
+        .dollar{
+            margin-top: 3px;
+        }
+
+        .row{
+            display: block;
+        }
+        
+        .mid{
+            margin-left: 40%;
+        }
+
+        .pandia{
+            margin-left: 20px;
+            height: 50px;
+            width: 50px;
+        }
+        
+        .hatric{
+            margin-bottom: 30px;
+            font-size: 17px;
+            margin-left: 30px;
+            width: 80px;
+            margin-top: 7px;
+        }
+
+        .ri-more-2-fill{
+            font-size: 30px;
+            margin-top: 10px;
+            margin-left: 90px;
+            cursor: pointer;
+        }
+
+        .profile{
+            display: flex;
+            padding-top: 18px;
+            border-radius: 10px;
+            color: rgb(89, 89, 165);
+            border: 2px solid none;
+            background-color: white;
+        }
+
+        .profile:hover{
+            background-color: rgb(212, 233, 241);
+        }
+
+        .pri{
+            border: 1px solid none;
+            background-color: whitesmoke;
+            margin-top: 30px;
+            margin-left: -35px;
+            text-align: center;
+            padding-right: 20px;
+            padding-left: 20px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            width: 200px;
+            border-radius: 5px;
+        }
+
+        .pri:hover{
+            background-color: white;
+        }
+
+        .mmid{
+            display: flex;
+            justify-content: center;
+        }
+
+        .ri-check-line{
+            color: white;
+            border: 1px solid black;
+            background-color: blue;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .rblock{
+            color: rgb(89, 89, 165);
+            margin-top: 55px;
+            border-radius: 10PX;
+            border: 1px solid none;
+            background-color: white;
+            padding-left: 30px;
+        }
+
+        .rblock:hover{
+            background-color: rgb(212, 233, 241);
+        }
+
+        .llll{
+            font-size: 30px;
+            display: flex;
+        }
+
+        .llll1{
+            color: rgb(190, 190, 190);
+        }
+
+        .ri-stop-large-fill{
+            font-size: 22px;
+            color: rgb(185, 185, 185);
+            cursor: pointer;
+        }
+
+    </style>
+
+</head>
+<body style="background-color: whitesmoke;">
+    
+<div class="all">
+    
+    <div class="left">
+
+        <div class="line1">
+            <div class="Barcelona"><pre>Barcelona (BCN) - Rome(ROM) 
+1 adult economy </pre>
+            </div>
+                <div class="calander">
+            <div class="icon"><p><i class="ri-calendar-2-line"></i> &ensp;Tuesday , Apr - 21 </P></div>
+            <div class="icon"><p><i class="ri-todo-line"></i></i> &ensp;One Way </P></div>
+                </div>
+        </div>
+
+        <p>183 Results</p>
+
+        <div class="line2">
+            <div class="block">
+                <p class="dollar"><i class="ri-money-dollar-circle-fill"></i></p>
+                <div class="n34">34</div>
+                <div class="down">
+                    <div class="cheapest">Cheapest </div>
+                    <div>2Hr 34m Charge </div>
+                </div>
+            </div>
+
+            <div class="block">
+                <p class="dollar"><i class="ri-money-dollar-circle-fill"></i></p>
+                <div class="n34">56</div>
+                <div class="down">
+                    <div class="cheapest">Best </div>
+                    <div> 1Hr 15m Charge </div>
+                </div>
+            </div>
+
+            <div class="block">
+                <p class="dollar"><i class="ri-money-dollar-circle-fill"></i></p>
+                <div class="n34">93</div>
+                <div class="down">
+                    <div class="cheapest">Faster </div>
+                    <div>1Hr 24m Charge </div>
+                </div>
+            </div>
+
+            <div class="block">
+                <p class="dollar"><i class="ri-money-dollar-circle-fill"></i></p>
+                <div class="n34">58</div>
+                <div class="down">
+                    <div class="cheapest">Fly</div>
+                    <div>2Hr 34 Charge </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="box">
+            
+            <div><img class = "tiger" src="tiger.png"></div>
+            <pre class="l1">10:30 AM
+Barcelona(BCN) 
+Tuesday,Apr-21</pre>
+            <div class="n">
+                <p><i class="ri-record-circle-fill"></i></p>
+                <div class="row">
+                    <div class="mid">1Hr 50m</div>
+                    <div>____________________________________</div>
+                    <p class="mid">Non stop</p>
+                </div>
+                <p><i class="ri-record-circle-line"></i></p>
+            </div> 
+            <pre class="o">12:20 AM
+Rome(ROM)
+Tue , Apr-21</pre> 
+            <div class="z">
+                <p class="g"><i class="ri-money-dollar-circle-fill"></i></p>
+                <div class="p">56</div>
+                <p class="q">USD</p>
+            </div>     
+            <div><p><button class="r">Select</button></p></div>
+        </div>
+
+        <div class="box">
+            <p><img class = "tiger" src="s-icon.png"></p>
+            <p><img class = "ic" src="tiger.png"></p>
+            <pre class="l">07:45 AM
+Barcelona(BCN)
+Tuesday,Apr-21</pre>
+            <div class="n">
+                <p><i class="ri-record-circle-fill"></i></p>
+                <div class="row">
+                    <div class="mid">7 Hr 55m</div>
+                    <div>_____________________________________</div>
+                    <p class="mid">One stop</p>
+                </div>
+                <p><i class="ri-record-circle-line"></i></p>
+            </div> 
+            <pre class="o">03:40 PM
+Rome (ROM)
+Tue , Apr-21</pre> 
+            <div class="z">
+                <p class="g"><i class="ri-money-dollar-circle-fill"></i></p>
+                <div class="p">68</div>
+                <p class="q">USD</p>
+            </div>        
+            <p><button class="r">Select</button></p>
+        </div>
+
+
+        <div class="box">
+            <p><img class = "tiger" src="cup.png"></p>
+            <p><img class = "ic" src="s-icon.png"></p>
+            <pre class="l">10:35 PM
+Barcelona(BCN) 
+Tuesday,Apr-21</pre>
+            <div class="n">
+                <p><i class="ri-record-circle-fill"></i></p>
+                <div class="row">
+                    <div class="mid">12 Hr 15 m</div>
+                    <div>____________________________________</div>
+                    <p class="mid">Two stop</p>
+                </div>
+                <p><i class="ri-record-circle-line"></i></p>
+            </div> 
+            <pre class="o">03:50 PM
+Rome (ROM)
+Tue , Apr-22</pre>
+            <div class="z">
+                <p class="g"><i class="ri-money-dollar-circle-fill"></i></p>
+                <div class="p">82</div>
+                <p class="q">USD</p>
+            </div>        
+            <p><button class="r">Select</button></p>
+        </div>
+
+
+        <div class="box">
+            <p><img class = "tiger" src="tiger.png"></p>
+            <p><img class = "ic" src="cup.png"></p>
+            <pre class="l">09:30 AM
+Barcelona(BCN)
+Tuesday,Apr-21</pre>
+            <div class="n">
+                <p><i class="ri-record-circle-fill"></i></p>
+                <div class="row">
+                    <div class="mid">23 Hr 15 m</div>
+                    <div>_____________________________________</div>
+                    <p class="mid">Three stop</p>
+                </div>
+                <p><i class="ri-record-circle-line"></i></p>
+            </div> 
+            <pre class="o">08:45 AM
+Rome (ROM)
+Tue , Apr-22</pre> 
+            <div class="z">
+                <p class="g"><i class="ri-money-dollar-circle-fill"></i></p>
+                <div class="p">91</div>
+                <p class="q">USD</p>
+            </div>        
+            <p><button class="r">Select</button></p>
+        </div>
+    </div>
+
+    <div class="right">
+
+        <div class = "profile" >
+            <img class="pandia" src="hardik.png">
+            <pre class="hatric">Hello,
+HardicPandya</pre>
+        <i class="ri-more-2-fill"></i>
+        </div>
+
+        <div class="rblock">
+            <div class="mmid">
+                <p class="pri">Get Price Alart</p>
+            </div>
+            <h3>Stops</h3>
+            <Pre><i class="ri-check-line"></i>     Non Stop                $56</Pre>
+            <Pre><i class="ri-check-line"></i>     1 Stop                  $68</Pre>
+            <Pre><i class="ri-check-line"></i>     2+ Stop                 $82</Pre>
+            <h3>Depature Times</h3>
+            <div>11Am - 12Am</div>
+            <div class="llll"><div class="llll1">______</div><div>________</div></div>
+            <h3>Trip Duration</h3>
+            <div>2 Hours - 12 Hours</div>
+            <div class="llll"><div >__________</div><div class="llll1">____</div></div>
+            <h3>Baggage</h3>
+            <Pre><i class="ri-check-line"></i>     1 Small Bag               $56</Pre>
+            <Pre><i class="ri-stop-large-fill"></i>     2 Coined Bag              $68</Pre>
+            <Pre><i class="ri-stop-large-fill"></i>     Cheched-In-Bags          $82</Pre>
+            <h3>AirPorts</h3>
+            <Pre><i class="ri-check-line"></i>     CIA              Rome Campine</Pre>
+            <Pre><i class="ri-stop-large-fill"></i>     ICO             Rome Flumino</Pre>
+            <br>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
